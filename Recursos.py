@@ -72,7 +72,7 @@ def esperar_elemento_css(navegador, seletor, tempo=10):
     try:
         return WebDriverWait(navegador, tempo).until(EC.element_to_be_clickable((By.CSS_SELECTOR, seletor)))
     except Exception as e:
-        print(f"❌ Elemento com seletor CSS '{seletor}' não encontrado ou não clicável: {e}")
+        print(f"❌ Elemento com seletor CSS '{seletor}' não encontrado com ou não clicável: {e}")
         return None
 
 
